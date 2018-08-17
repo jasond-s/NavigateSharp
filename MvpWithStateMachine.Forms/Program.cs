@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MvpWithStateMachine.Forms.Presentation;
+using MvpWithStateMachine.Forms.Presentation.States;
+using MvpWithStateMachine.Navigation.Events;
 
-namespace MvpWithStateMachine
+namespace MvpWithStateMachine.Forms
 {
     static class Program
     {
@@ -16,7 +16,9 @@ namespace MvpWithStateMachine
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new NavigationContext(
+                new FormsStartupState(new PresenterFactory()),
+                new StartUpEvent("Hello")));
         }
     }
 }

@@ -10,7 +10,7 @@ namespace NavigateSharp.States
         protected NavigationState(IPresenterFactory presenterFactory) 
             => PresenterFactory = presenterFactory;
 
-        public abstract Presenter GetPresentor();
+        public abstract Presenter GetPresenter();
 
         public abstract NavigationState Next(NavigationEvent evt);
     }

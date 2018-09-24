@@ -9,7 +9,7 @@ namespace NavigateSharp.States
         {
         }
 
-        public override Presenter GetPresentor()
+        public override Presenter GetPresenter()
         {
             return new StartUpPresenter();
         }

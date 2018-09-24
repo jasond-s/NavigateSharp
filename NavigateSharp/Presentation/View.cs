@@ -14,5 +14,5 @@ namespace NavigateSharp.Presentation
         event CloseClickedEventHandler CloseRequest;
     }
 
-    public delegate void CloseClickedEventHandler(object sender, CloseApplicationEvent args);
+    public delegate void CloseClickedEventHandler(object sender, CloseViewEvent args);
 }

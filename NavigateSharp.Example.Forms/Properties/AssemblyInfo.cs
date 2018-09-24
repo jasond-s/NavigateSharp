@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NavigateSharp.Wpf")]
+[assembly: AssemblyTitle("NavigateSharp.Example.Forms")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NavigateSharp.Wpf")]
+[assembly: AssemblyProduct("NavigateSharp.Example.Forms")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ded9ac5a-0ee3-435e-8f80-4aee906ea96b")]
+[assembly: Guid("ef542fab-6958-43ab-b670-89928215023b")]
 
 // Version information for an assembly consists of the following four values:
 //

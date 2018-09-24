@@ -3,4 +3,8 @@
     public class CloseApplicationEvent : NavigationEvent
     {
     }
+
+    public class CloseViewEvent : NavigationEvent
+    {
+    }
 }

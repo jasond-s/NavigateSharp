@@ -30,21 +30,21 @@ namespace NavigateSharp.Navigation
                 return;
             }
 
-            var currentPresentor = _current?.GetPresentor();
-            var nextPresentor = nextState?.GetPresentor();
+            var currentPresenter = _current?.GetPresenter();
+            var nextPresenter = nextState?.GetPresenter();
             
-            if (currentPresentor != null)
+            if (currentPresenter != null)
             {
-                currentPresentor.Dismiss();
-                currentPresentor.Navigator = null;
+                currentPresenter.Dismiss();
+                currentPresenter.Navigator = null;
                 _current = null;
             }
 
-            if (nextPresentor != null)
+            if (nextPresenter != null)
             {
                 _current = nextState;
-                nextPresentor.Navigator = this;
-                nextPresentor.Display(evt);
+                nextPresenter.Navigator = this;
+                nextPresenter.Display(evt);
             }
         }
 

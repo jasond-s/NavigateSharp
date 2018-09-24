@@ -13,9 +13,9 @@ namespace NavigateSharp.States
 
         }
 
-        public override Presenter GetPresentor()
+        public override Presenter GetPresenter()
         {
-            return new TearDownPresentor(this);
+            return new TearDownPresenter(this);
         }
 
         public override NavigationState Next(NavigationEvent evt)
@@ -24,11 +24,11 @@ namespace NavigateSharp.States
             return this;
         }
 
-        public class TearDownPresentor : Presenter
+        public class TearDownPresenter : Presenter
         {
             private readonly TearDownState _state;
 
-            public TearDownPresentor(TearDownState state) : base(new TearDownView())
+            public TearDownPresenter(TearDownState state) : base(new TearDownView())
             {
                 _state = state;
             }

@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Example.Forms", "NavigateSharp.Example.Forms\NavigateSharp.Example.Forms.csproj", "{EF542FAB-6958-43AB-B670-89928215023B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Example.Wpf", "NavigateSharp.Example.Wpf\NavigateSharp.Example.Wpf.csproj", "{4664A7A1-7381-42E5-95E5-12A5CD793231}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp", "NavigateSharp\NavigateSharp.csproj", "{BEA02A2D-9895-4399-8329-03E782503391}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Forms", "NavigateSharp.Forms\NavigateSharp.Forms.csproj", "{EF542FAB-6958-43AB-B670-89928215023B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Wpf", "NavigateSharp.Wpf\NavigateSharp.Wpf.csproj", "{DED9AC5A-0EE3-435E-8F80-4AEE906EA96B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Wpf", "NavigateSharp.Wpf\NavigateSharp.Wpf.csproj", "{4664A7A1-7381-42E5-95E5-12A5CD793231}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Forms", "NavigateSharp.Forms\NavigateSharp.Forms.csproj", "{03E90D10-FE70-4F74-A182-B80E041FE78E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BEA02A2D-9895-4399-8329-03E782503391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEA02A2D-9895-4399-8329-03E782503391}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEA02A2D-9895-4399-8329-03E782503391}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEA02A2D-9895-4399-8329-03E782503391}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EF542FAB-6958-43AB-B670-89928215023B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF542FAB-6958-43AB-B670-89928215023B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF542FAB-6958-43AB-B670-89928215023B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +27,18 @@ Global
 		{4664A7A1-7381-42E5-95E5-12A5CD793231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4664A7A1-7381-42E5-95E5-12A5CD793231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4664A7A1-7381-42E5-95E5-12A5CD793231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA02A2D-9895-4399-8329-03E782503391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA02A2D-9895-4399-8329-03E782503391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA02A2D-9895-4399-8329-03E782503391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA02A2D-9895-4399-8329-03E782503391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED9AC5A-0EE3-435E-8F80-4AEE906EA96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED9AC5A-0EE3-435E-8F80-4AEE906EA96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED9AC5A-0EE3-435E-8F80-4AEE906EA96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED9AC5A-0EE3-435E-8F80-4AEE906EA96B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E90D10-FE70-4F74-A182-B80E041FE78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E90D10-FE70-4F74-A182-B80E041FE78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E90D10-FE70-4F74-A182-B80E041FE78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E90D10-FE70-4F74-A182-B80E041FE78E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,8 @@
-﻿# MVP with State Machine
+﻿# NavigateSharp
 
-## Considerations
+## MVP with State Machine
+
+### 1. Considerations
 
 1. All views must be represented in one or more states.
 2. All states must define state transitions.

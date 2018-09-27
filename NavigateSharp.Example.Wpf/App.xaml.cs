@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 using NavigateSharp.Example.Wpf.Presentation;
-using NavigateSharp.Example.Wpf.Presentation.States;
+using NavigateSharp.Example.Wpf.States;
 using NavigateSharp.Navigation.Events;
 using NavigateSharp.Wpf;
 

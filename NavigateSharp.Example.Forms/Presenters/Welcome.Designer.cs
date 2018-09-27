@@ -1,4 +1,4 @@
-﻿namespace NavigateSharp.Example.Forms.Presentation.Presenters
+﻿namespace NavigateSharp.Example.Forms.Presenters
 {
     partial class Welcome
     {

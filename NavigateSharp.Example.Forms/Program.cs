@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using NavigateSharp.Example.Forms.Presentation;
-using NavigateSharp.Example.Forms.Presentation.States;
+using NavigateSharp.Example.Forms.States;
 using NavigateSharp.Forms;
 using NavigateSharp.Navigation.Events;
 

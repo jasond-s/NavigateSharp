@@ -54,12 +54,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Presentation\States\WelcomeState.cs" />
-    <Compile Include="Presentation\States\WpfTearDownState.cs" />
-    <Compile Include="Presentation\View.cs" />
+    <Compile Include="Presenters\Products.Presenter.cs" />
+    <Compile Include="Presenters\Products.xaml.cs">
+      <DependentUpon>Products.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="States\ProductsState.cs" />
+    <Compile Include="States\WelcomeState.cs" />
+    <Compile Include="States\WpfTearDownState.cs" />
     <Compile Include="Presentation\PresenterFactory.cs" />
-    <Compile Include="Presentation\States\WpfStartUpState.cs" />
-    <Page Include="Presentation\Presenters\Welcome.xaml">
+    <Compile Include="States\WpfStartUpState.cs" />
+    <Page Include="Presenters\Products.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Presenters\Welcome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -67,8 +75,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Presentation\Presenters\Welcome.Presenter.cs" />
-    <Compile Include="Presentation\Presenters\Welcome.xaml.cs">
+    <Compile Include="Presenters\Welcome.Presenter.cs" />
+    <Compile Include="Presenters\Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>

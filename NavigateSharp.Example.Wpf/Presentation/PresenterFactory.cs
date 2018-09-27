@@ -1,4 +1,4 @@
-﻿using NavigateSharp.Example.Wpf.Presentation.Presenters;
+﻿using NavigateSharp.Example.Wpf.Presenters;
 using NavigateSharp.Presentation;
 
 namespace NavigateSharp.Example.Wpf.Presentation
@@ -12,6 +12,11 @@ namespace NavigateSharp.Example.Wpf.Presentation
             if (type == typeof(WelcomePresenter))
             {
                 return new WelcomePresenter(new Welcome());
+            }
+
+            if (type == typeof(ProductsPresenter))
+            {
+                return new ProductsPresenter(new Products());
             }
 
             return null;

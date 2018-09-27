@@ -2,7 +2,7 @@
 using NavigateSharp.Presentation;
 using NavigateSharp.States;
 
-namespace NavigateSharp.Example.Wpf.Presentation.States
+namespace NavigateSharp.Example.Wpf.States
 {
     public class WpfStartUpState : StartUpState
     {

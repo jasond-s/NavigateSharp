@@ -2,7 +2,7 @@
 using NavigateSharp.Presentation;
 using NavigateSharp.States;
 
-namespace NavigateSharp.Example.Forms.Presentation.States
+namespace NavigateSharp.Example.Forms.States
 {
     public class FormsStartupState : StartUpState
     {

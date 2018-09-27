@@ -1,4 +1,4 @@
-﻿using NavigateSharp.Example.Forms.Presentation.Presenters;
+﻿using NavigateSharp.Example.Forms.Presenters;
 using NavigateSharp.Presentation;
 
 namespace NavigateSharp.Example.Forms.Presentation

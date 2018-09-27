@@ -1,5 +1,6 @@
 ﻿using System;
 using NavigateSharp.Navigation.Events;
+using NavigateSharp.Presentation;
 using NavigateSharp.States;
 
 namespace NavigateSharp.Navigation
@@ -11,46 +12,50 @@ namespace NavigateSharp.Navigation
 
     public class Navigator : INavigator
     {
-        private NavigationState _current;
-		
+        private NavigationState _currentState;
+        private Presenter _currentPresenter;
+
         public void NavigateTo(NavigationEvent evt)
         {
-            if (_current == null)
+            if (_currentState == null)
             {
                 throw new ArgumentException("State not initialised, must initialise navigator with starting state", nameof(NavigationState));
             }
 
-            NavigateTo(_current.Next(evt), evt);
+            NavigateTo(_currentState.Next(evt), evt);
         }
 		
         private void NavigateTo(NavigationState nextState, NavigationEvent evt)
         {
-            if (_current == nextState)
+            if (_currentState == nextState)
             {
                 return;
             }
 
-            var currentPresenter = _current?.GetPresenter();
+            var currentPresenter = _currentPresenter;
             var nextPresenter = nextState?.GetPresenter();
-            
+
+            _currentState = null;
+
+            if (nextPresenter != null)
+            {
+                _currentState = nextState;
+                nextPresenter.Navigator = this;
+                nextPresenter.Display(evt);
+            }
+
             if (currentPresenter != null)
             {
                 currentPresenter.Dismiss();
                 currentPresenter.Navigator = null;
-                _current = null;
             }
 
-            if (nextPresenter != null)
-            {
-                _current = nextState;
-                nextPresenter.Navigator = this;
-                nextPresenter.Display(evt);
-            }
+            _currentPresenter = nextPresenter;
         }
 
-        public void InitialiseWith(StartUpState startUp)
+        internal void InitialiseWith(StartUpState startUp)
         {
-            _current = startUp;
+            _currentState = startUp;
         }
     }
 }

@@ -1,18 +1,15 @@
 ﻿using System.ComponentModel;
-using System.Windows.Forms;
+using System.Windows;
 using NavigateSharp.Navigation.Events;
 using NavigateSharp.Presentation;
 
-namespace NavigateSharp.Example.Forms.Presentation
+namespace NavigateSharp.Wpf
 {
-    public abstract class View : Form, IView
+    public abstract class View : Window, IView
     {
         public bool? ShowAsDialog()
         {
-            var result = ShowDialog();
-            return 
-                result == DialogResult.OK || 
-                result == DialogResult.Yes;
+            return ShowDialog();
         }
 
         public event CloseClickedEventHandler CloseRequest;

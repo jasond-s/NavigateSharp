@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using NavigateSharp.States;
 
-namespace NavigateSharp.Example.Forms.Presentation.States
+namespace NavigateSharp.Example.Forms.States
 {
     public class FormsTearDownState : TearDownState
     {

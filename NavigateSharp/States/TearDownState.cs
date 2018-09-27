@@ -24,7 +24,7 @@ namespace NavigateSharp.States
             return this;
         }
 
-        public class TearDownPresenter : Presenter
+        public class TearDownPresenter : Presenter<TearDownView>
         {
             private readonly TearDownState _state;
 

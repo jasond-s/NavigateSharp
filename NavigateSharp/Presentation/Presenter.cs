@@ -5,13 +5,7 @@ namespace NavigateSharp.Presentation
 {
     public abstract class Presenter
     {
-        public INavigator Navigator { get; set; }
-        public IView View { get; }
-
-        protected Presenter(IView view)
-        {
-            View = view;
-        }
+        public INavigator Navigator { get; internal set; }
 
         public void Display(NavigationEvent evt)
         {
@@ -29,6 +23,16 @@ namespace NavigateSharp.Presentation
 
         protected virtual void OnDismiss()
         {
+        }
+    }
+
+    public abstract class Presenter<T> : Presenter where T : IView
+    {
+        public T View { get; }
+
+        protected Presenter(T view)
+        {
+            View = view;
         }
     }
 }

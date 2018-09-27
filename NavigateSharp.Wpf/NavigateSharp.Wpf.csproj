@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="NavigationContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NavigateSharp\NavigateSharp.csproj">

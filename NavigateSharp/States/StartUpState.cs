@@ -31,7 +31,7 @@ namespace NavigateSharp.States
             public event CloseClickedEventHandler CloseRequest;
         }
 
-        public class StartUpPresenter : Presenter
+        public class StartUpPresenter : Presenter<IView>
         {
             public StartUpPresenter() 
                 : base(new StartUpView())

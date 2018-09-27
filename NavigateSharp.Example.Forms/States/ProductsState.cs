@@ -1,9 +1,9 @@
-﻿using NavigateSharp.Example.Forms.Presentation.Presenters;
+﻿using NavigateSharp.Example.Forms.Presenters;
 using NavigateSharp.Navigation.Events;
 using NavigateSharp.Presentation;
 using NavigateSharp.States;
 
-namespace NavigateSharp.Example.Forms.Presentation.States
+namespace NavigateSharp.Example.Forms.States
 {
     public class ProductsState : NavigationState
     {
@@ -22,6 +22,7 @@ namespace NavigateSharp.Example.Forms.Presentation.States
             switch (evt)
             {
                 case CloseViewEvent close:
+                case ProductsBackEvent productsBack:
                     return new WelcomeState(PresenterFactory);
                 default:
                     return this;

@@ -1,28 +1,29 @@
-﻿using NavigateSharp.Example.Wpf.Presentation.Presenters;
+﻿using NavigateSharp.Example.Wpf.Presenters;
 using NavigateSharp.Navigation.Events;
 using NavigateSharp.Presentation;
 using NavigateSharp.States;
 
-namespace NavigateSharp.Example.Wpf.Presentation.States
+namespace NavigateSharp.Example.Wpf.States
 {
-    public class WelcomeState : NavigationState
+    public class ProductsState : NavigationState
     {
-        public WelcomeState(IPresenterFactory presenterFactory) 
+        public ProductsState(IPresenterFactory presenterFactory) 
             : base(presenterFactory)
         {
         }
 
         public override Presenter GetPresenter()
         {
-            return PresenterFactory.Build<WelcomePresenter>();
+            return PresenterFactory.Build<ProductsPresenter>();
         }
 
         public override NavigationState Next(NavigationEvent evt)
         {
             switch (evt)
             {
-                case CloseApplicationEvent closeApplicationEvent:
-                    return new WpfTearDownState();
+                case CloseViewEvent close:
+                case ProductsBackEvent productsBack:
+                    return new WelcomeState(PresenterFactory);
                 default:
                     return this;
             }

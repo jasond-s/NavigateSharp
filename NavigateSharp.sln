@@ -13,6 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Wpf", "Naviga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigateSharp.Forms", "NavigateSharp.Forms\NavigateSharp.Forms.csproj", "{03E90D10-FE70-4F74-A182-B80E041FE78E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{74261D31-3529-497E-A1C0-28D6CA1D4AF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A073549-6F18-48CC-AEA6-5C252C5F6177}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +49,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF542FAB-6958-43AB-B670-89928215023B} = {74261D31-3529-497E-A1C0-28D6CA1D4AF0}
+		{4664A7A1-7381-42E5-95E5-12A5CD793231} = {74261D31-3529-497E-A1C0-28D6CA1D4AF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AEBAC46-6AF7-47C0-BE7F-A3C0D95A1B14}

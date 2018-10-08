@@ -7,15 +7,14 @@ namespace NavigateSharp.Example.Forms.States
 {
     public class ProductsState : NavigationState
     {
-        public ProductsState(IPresenterFactory presenterFactory) 
-            : base(presenterFactory)
-        {
-        }
+        private readonly Presenter _presenter;
+
+        public ProductsState(IPresenterFactory presenterFactory)
+                : base(presenterFactory) 
+            => _presenter = PresenterFactory.Build<ProductsPresenter>();
 
         public override Presenter GetPresenter()
-        {
-            return PresenterFactory.Build<ProductsPresenter>();
-        }
+            => _presenter;
 
         public override NavigationState Next(NavigationEvent evt)
         {

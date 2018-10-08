@@ -13,7 +13,6 @@ namespace NavigateSharp.Navigation
     public class Navigator : INavigator
     {
         private NavigationState _currentState;
-        private Presenter _currentPresenter;
 
         public void NavigateTo(NavigationEvent evt)
         {
@@ -32,7 +31,7 @@ namespace NavigateSharp.Navigation
                 return;
             }
 
-            var currentPresenter = _currentPresenter;
+            var currentPresenter = _currentState?.GetPresenter();
             var nextPresenter = nextState?.GetPresenter();
 
             _currentState = null;
@@ -49,8 +48,6 @@ namespace NavigateSharp.Navigation
                 currentPresenter.Dismiss();
                 currentPresenter.Navigator = null;
             }
-
-            _currentPresenter = nextPresenter;
         }
 
         internal void InitialiseWith(StartUpState startUp)

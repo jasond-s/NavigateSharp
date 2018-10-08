@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NavigateSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NavigateSharp.1.0.0\lib\net45\NavigateSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NavigateSharp.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NavigateSharp.Forms.1.0.0\lib\net45\NavigateSharp.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -84,6 +90,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Presenters\Welcome.Presenter.cs" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,16 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NavigateSharp.Forms\NavigateSharp.Forms.csproj">
-      <Project>{03e90d10-fe70-4f74-a182-b80e041fe78e}</Project>
-      <Name>NavigateSharp.Forms</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NavigateSharp\NavigateSharp.csproj">
-      <Project>{bea02a2d-9895-4399-8329-03e782503391}</Project>
-      <Name>NavigateSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -34,6 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NavigateSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NavigateSharp.1.0.0\lib\net45\NavigateSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="NavigateSharp.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NavigateSharp.Wpf.1.0.0\lib\net45\NavigateSharp.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -99,6 +105,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -106,16 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\NavigateSharp.Wpf\NavigateSharp.Wpf.csproj">
-      <Project>{ded9ac5a-0ee3-435e-8f80-4aee906ea96b}</Project>
-      <Name>NavigateSharp.Wpf</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NavigateSharp\NavigateSharp.csproj">
-      <Project>{bea02a2d-9895-4399-8329-03e782503391}</Project>
-      <Name>NavigateSharp</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

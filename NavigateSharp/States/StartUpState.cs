@@ -4,15 +4,13 @@ namespace NavigateSharp.States
 {
     public abstract class StartUpState : NavigationState
     {
-        protected StartUpState(IPresenterFactory presenterFactory) 
+        protected StartUpState(IPresenterFactory presenterFactory)
             : base(presenterFactory)
         {
         }
 
-        public override Presenter GetPresenter()
-        {
-            return new StartUpPresenter();
-        }
+        public override Presenter GetPresenter() 
+            => new StartUpPresenter();
 
         public class StartUpView : IView
         {
@@ -33,7 +31,7 @@ namespace NavigateSharp.States
 
         public class StartUpPresenter : Presenter<IView>
         {
-            public StartUpPresenter() 
+            public StartUpPresenter()
                 : base(new StartUpView())
             {
             }

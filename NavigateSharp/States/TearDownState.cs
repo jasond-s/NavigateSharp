@@ -7,50 +7,40 @@ namespace NavigateSharp.States
     {
         public abstract void Close();
 
-        protected TearDownState() 
+        protected TearDownState()
             : base(null)
         {
 
         }
 
-        public override Presenter GetPresenter()
-        {
-            return new TearDownPresenter(this);
-        }
+        public override Presenter GetPresenter() => new TearDownPresenter(this);
 
-        public override NavigationState Next(NavigationEvent evt)
-        {
-            // End state.
-            return this;
-        }
+        public override NavigationState Next(NavigationEvent evt) 
+            => this;
 
         public class TearDownPresenter : Presenter<TearDownView>
         {
             private readonly TearDownState _state;
 
-            public TearDownPresenter(TearDownState state) : base(new TearDownView())
-            {
-                _state = state;
-            }
+            public TearDownPresenter(TearDownState state) : base(new TearDownView()) 
+                => _state = state;
 
-            protected override void OnDisplay(NavigationEvent evt)
-            {
-                _state?.Close();
-            }
+            protected override void OnDisplay(NavigationEvent evt) 
+                => _state?.Close();
         }
 
         public class TearDownView : IView
         {
-            public void Show() 
+            public void Show()
                 => throw new System.NotImplementedException();
 
-            public bool? ShowAsDialog() 
+            public bool? ShowAsDialog()
                 => throw new System.NotImplementedException();
 
-            public void Hide() 
+            public void Hide()
                 => throw new System.NotImplementedException();
 
-            public void Close() 
+            public void Close()
                 => throw new System.NotImplementedException();
 
             public event CloseClickedEventHandler CloseRequest;

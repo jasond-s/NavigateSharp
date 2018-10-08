@@ -1,6 +1,5 @@
 ﻿using System;
 using NavigateSharp.Navigation.Events;
-using NavigateSharp.Presentation;
 using NavigateSharp.States;
 
 namespace NavigateSharp.Navigation
@@ -23,7 +22,7 @@ namespace NavigateSharp.Navigation
 
             NavigateTo(_currentState.Next(evt), evt);
         }
-		
+
         private void NavigateTo(NavigationState nextState, NavigationEvent evt)
         {
             if (_currentState == nextState)
@@ -50,9 +49,7 @@ namespace NavigateSharp.Navigation
             }
         }
 
-        internal void InitialiseWith(StartUpState startUp)
-        {
-            _currentState = startUp;
-        }
+        internal void InitialiseWith(StartUpState startUp) 
+            => _currentState = startUp;
     }
 }

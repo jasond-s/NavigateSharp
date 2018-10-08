@@ -7,15 +7,11 @@ namespace NavigateSharp.Presentation
     {
         public INavigator Navigator { get; internal set; }
 
-        public void Display(NavigationEvent evt)
-        {
-            OnDisplay(evt);
-        }
+        public void Display(NavigationEvent evt) 
+            => OnDisplay(evt);
 
-        public void Dismiss()
-        {
-            OnDismiss();
-        }
+        public void Dismiss() 
+            => OnDismiss();
 
         protected virtual void OnDisplay(NavigationEvent evt)
         {
@@ -30,9 +26,7 @@ namespace NavigateSharp.Presentation
     {
         public T View { get; }
 
-        protected Presenter(T view)
-        {
-            View = view;
-        }
+        protected Presenter(T view) 
+            => View = view;
     }
 }

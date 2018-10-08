@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Navigation\Events\CloseApplicationEvent.cs" />
+    <Compile Include="Navigation\Events\CloseViewEvent.cs" />
     <Compile Include="Navigation\Events\NavigationEvent.cs" />
     <Compile Include="Navigation\Navigator.cs" />
     <Compile Include="Presentation\PresenterFactory.cs" />

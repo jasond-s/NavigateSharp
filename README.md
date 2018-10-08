@@ -1,6 +1,6 @@
 # NavigateSharp
 
-Or MVP with State Machine
+### Or M(odel)V(iew)P(resenter) with State Machine
 
 ## Considerations
 

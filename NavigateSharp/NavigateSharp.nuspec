@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>NavigateSharp</id>
+    <version>$version$</version>
+    <authors>Jason Dryhurst-Smith</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NavigateSharp, a simple framework for building sensibly layered desktop apps.</description>
+    <projectUrl>https://github.com/jasond-s/NavigateSharp</projectUrl>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>

@@ -35,9 +35,6 @@
     <Reference Include="NavigateSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NavigateSharp.1.0.0\lib\net45\NavigateSharp.dll</HintPath>
     </Reference>
-    <Reference Include="NavigateSharp.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NavigateSharp.Forms.1.0.0-beta25\lib\net45\NavigateSharp.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />

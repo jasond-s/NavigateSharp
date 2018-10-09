@@ -7,7 +7,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>NavigateSharp, a simple framework for building sensibly layered desktop apps.</description>
     <projectUrl>https://github.com/jasond-s/NavigateSharp</projectUrl>
-    <iconUrl>https://jasondspowerupstorage.blob.core.windows.net/public/navigatesharp.png</iconUrl>
+    <iconUrl>https://jasondspowerupstorage.blob.core.windows.net/public/navigatesharp_outline.png</iconUrl>
     <dependencies>
       <dependency id="NavigateSharp" version="[0,2)" />
     </dependencies>

@@ -19,7 +19,7 @@ namespace NavigateSharp.Example.Forms
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new NavigationContext(
                 new FormsStartupState(new PresenterFactory()),
-                new StartUpEvent("Hello")));
+                new StartUpEvent("Welcome to NavigateSharp")));
         }
     }
 }

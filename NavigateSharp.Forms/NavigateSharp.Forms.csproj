@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NavigateSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NavigateSharp.1.0.0\lib\net45\NavigateSharp.dll</HintPath>
+      <HintPath>..\packages\NavigateSharp.1.0.0-beta27\lib\net45\NavigateSharp.dll</HintPath>
     </Reference>
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />

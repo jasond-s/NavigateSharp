@@ -1,22 +1,26 @@
-﻿using NavigateSharp.Navigation.Events;
+﻿using NavigateSharp.Example.Wpf.States;
+using NavigateSharp.Navigation.Events;
 using NavigateSharp.Presentation;
 
 namespace NavigateSharp.Example.Wpf.Presenters
 {
     public class WelcomePresenter : Presenter<IWelcomeView>
     {
-        public WelcomePresenter(IWelcomeView welcomeView)
+        private readonly IApplicationData _applicationData;
+
+        public WelcomePresenter(IWelcomeView welcomeView, IApplicationData applicationData)
             : base(welcomeView)
         {
-
+            _applicationData = applicationData;
         }
 
         protected override void OnDisplay(NavigationEvent evt)
         {
-            if (evt is StartUpEvent startUpEvent)
-            {
-                View.WelcomeText = startUpEvent.Introduction;
-            }
+            // Get all the state from the service, rather than directly from the event.
+
+            View.WelcomeText = _applicationData.GetIntroductionText();
+
+            // Register the view handlers to presenter methods. 
 
             View.WelcomeOk += WelcomeViewOnWelcomeOk;
             View.CloseRequest += WelcomeViewCloseClicked;

@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/jasond-s/NavigateSharp</projectUrl>
     <iconUrl>https://jasondspowerupstorage.blob.core.windows.net/public/navigatesharp_outline.png</iconUrl>
     <dependencies>
-      <dependency id="NavigateSharp" version="[0,2)" />
+      <dependency id="NavigateSharp" version="[0,1)" />
     </dependencies>
   </metadata>
   <files>

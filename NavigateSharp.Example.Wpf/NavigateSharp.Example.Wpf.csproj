@@ -35,10 +35,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NavigateSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NavigateSharp.1.0.0\lib\net45\NavigateSharp.dll</HintPath>
+      <HintPath>..\packages\NavigateSharp.1.0.0-beta27\lib\net45\NavigateSharp.dll</HintPath>
     </Reference>
     <Reference Include="NavigateSharp.Wpf, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NavigateSharp.Wpf.1.0.0-beta25\lib\net45\NavigateSharp.Wpf.dll</HintPath>
+      <HintPath>..\packages\NavigateSharp.Wpf.1.0.0-beta27\lib\net45\NavigateSharp.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -64,6 +64,8 @@
     <Compile Include="Presenters\Products.xaml.cs">
       <DependentUpon>Products.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Services\ApplicationData.cs" />
+    <Compile Include="Services\ProductsData.cs" />
     <Compile Include="States\ProductsState.cs" />
     <Compile Include="States\WelcomeState.cs" />
     <Compile Include="States\WpfTearDownState.cs" />

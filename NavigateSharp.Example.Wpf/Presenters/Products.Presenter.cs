@@ -25,6 +25,7 @@ namespace NavigateSharp.Example.Wpf.Presenters
         protected override void OnDismiss()
         {
             View.CloseRequest -= ProductsViewCloseClicked;
+            View.ProductsBack -= ProductsViewOnProductsBack;
             View.Close();
         }
 

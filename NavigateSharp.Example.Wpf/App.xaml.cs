@@ -6,6 +6,11 @@ using NavigateSharp.Wpf;
 
 namespace NavigateSharp.Example.Wpf
 {
+    public class PoorMansDi
+    {
+        public IApplicationData ApplicationData = new ApplicationData();
+    }
+
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
@@ -13,9 +18,11 @@ namespace NavigateSharp.Example.Wpf
     {
         public App()
         {
+            var diContainer = new PoorMansDi();
+
             Current.MainWindow = new NavigationContext(
-                new WpfStartUpState(new PresenterFactory()),
-                new StartUpEvent("Welcome"));
+                new WpfStartUpState(new PresenterFactory(diContainer), diContainer.ApplicationData),
+                new StartUpEvent("Welcome to NavigateSharp"));
         }
     }
 }
